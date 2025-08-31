@@ -1,4 +1,4 @@
-# ProBuilder
+# ProBuilder - De novo design of light-responsive protein–protein interactions enables reversible formation of protein assemblies. [Nature Chemistry](https://www.nature.com/articles/s41557-025-01929-2). 
 A Super Fast Protein Structure Generation Package
 
 Probuilder is designed to generate protein backbone structure with predefined requirements, like folding, small molecule interaction, protein binding and ion binding. All the calculations are based solely on backbone coordinates and geometric constrains, so it is lightningly fast.
