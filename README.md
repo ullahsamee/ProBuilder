@@ -6,9 +6,15 @@ Probuilder is designed to generate protein backbone structure with predefined re
 
 All the external libraries have been included in this repo (see the acknowledge section for the external library used here). To build the apps, you need to have the boost library (v1.67 used on my computer). By default, all the apps are build in the static mode, so they can be easily run on other computers once compiled:
 
-    $ mkdir build & cd build
-    $ cmake ..
-    $ make -j 10
+```bash
+sudo apt-get update
+sudo apt-get install libboost-all-dev
+
+cd build
+cmake ..
+make -j 24
+```
+![ProBuilder Compilation Screenshot](examples/compilation.png)
 
 ## Scaffold generation
 The `scaffold_generator` can rapidly generate helical protein scaffolds. It takes the desired protein length and number of helices as input and builds scaffolds through fragment assembly. The tool uses the residue pair transform score (RPX score) to guide protein folding. Essentially, it performs the same function as the blueprint system in Rosetta, but operates significantly faster. An example is provided in the example folder, with the meaning of the options described in the example.
